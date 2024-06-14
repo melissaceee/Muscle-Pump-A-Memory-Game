@@ -1,0 +1,50 @@
+
+    const cards = [
+        '1','2','3','4','5','6','7','8','9','10',
+        '1','2','3','4','5','6','7','8','9','10'
+    ]; // these are going to represent every square in the game, its duplicated to match 
+
+    let flippedCards = []; 
+    let matchedCards = [];
+
+
+    let startingTime = 5 // establishing length of game 
+    const timer = document.getElementById('time-left'); //accessing the element (div) 
+    in the html file (DOM) below: the function is establishing when timer starts it will deaulft 5 seconds
+    and decrease by 1 sc as time goes on- if tge timer hits 0 then the timer will stop and the message to player is
+    you lost the game.
+    innerhtml accesses the x element you are reffering to (html data?)
+    the const interval is calling the timer to update by seconds:
+    JS the seconds are in milliseconds (by the thousands)
+
+
+
+
+    function updateTimer (){
+        timer.innerHTML = `${startingTime}`
+        startingTime-=1 //decrement by one second
+        if(startingTime < 0) {
+            clearInterval (interval);
+            const results = document.getElementById('game-result');  
+            results.innerHTML = `${'You Lost!!!'}`
+        }
+       
+    }
+    const interval = setInterval(updateTimer, 1000) // has to be in milliseconds
+    
+
+    // below function is meant to shuffle the game cards after game is over. the for loop is asking the computer
+     to go through each and every card to swap the the current position of card to random position of card
+
+
+     function shuffle(array){
+        for (let i = 0; i<array.length; i++){
+           let randomNumber =  Math.floor (Math.random()* array.length)
+           let temp = array [i]
+           array[i] = array[randomNumber]
+           array [randomNumber] = temp
+        }
+    }
+ 
+
+
