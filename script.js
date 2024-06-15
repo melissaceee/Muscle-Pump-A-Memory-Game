@@ -33,3 +33,11 @@ function shuffle(array){
 }
 
 function startGame() {
+    shuffle(cards);
+    cards.forEach(cardValue => {
+        const div = document.createElement('div');
+        div.classList.add('card');
+        div.dataset.value = cardValue;
+        gameBoard.appendChild(div);
+        div.addEventListener('click', showCard);
+    });
