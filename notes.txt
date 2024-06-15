@@ -6,6 +6,10 @@ https://www.w3schools.com/js/js_timing.asp
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties
 
 
+Strech goals:
+create page where instructions and introduction are listed with stat button- takes you the actua grid page.
+set up a physical timer box or image like an alarm clock
+
 
 
 
