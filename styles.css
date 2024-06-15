@@ -19,7 +19,7 @@ h1 {
 h2 {
     color:black;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 
 h3 {
@@ -37,6 +37,7 @@ h3 {
     justify-content: center;
 }
 
+
 .card {
     width: 100px;
     height: 100px;
@@ -47,15 +48,13 @@ h3 {
     font-size: 32px;
     color: white;
     border-radius: 10px;
-    transition-property: background-color, transform;
-
-
 }
 
 .card.matched {
     background-color: green;
 }
 
-.card.flipped {
+.card.clicked {
     background-color: none;
 }
+
