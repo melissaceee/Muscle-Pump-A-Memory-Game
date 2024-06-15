@@ -23,7 +23,7 @@ Game uses CSS, HTML and JavaScript
 https://melissaceee.github.io/Muscle-Pump-A-Memory-Game/
 
 ## Future Improvements:
-1. Seperate page that loads Instructions and start button
+1. Separate page that loads Instructions and start button
 2. Game to shuffle variety of board options- not just limited to numbers (can include letters or words)
 3. Integrate the sound into your game (example: timer ticking for 60 seconds or boo noise when player lose)
 5. Integrate an effect (example: conffetti takes over screen if player wins)
