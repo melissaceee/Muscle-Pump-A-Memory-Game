@@ -99,7 +99,7 @@ function checkMatch() {
         clearInterval(interval);
         const results = document.getElementById('game-result');
         results.classList.add('game-result-win');
-        setTimeout(() => results.innerHTML = 'Winner winner chick dinner!!!', 500);
+        setTimeout(() => results.innerHTML = 'Winner winner chicken dinner!!!', 500);
     }
 }
 

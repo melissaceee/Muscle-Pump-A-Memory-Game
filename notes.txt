@@ -18,10 +18,6 @@ need to do readme
 
 
 
-
-
-
-
 Notes: 
 
 // these are going to represent every square in the game, its duplicated to match 
@@ -37,7 +33,7 @@ const cards = [
     let startingTime = 45 // establishing length of game 
     const timer = document.getElementById('time-left'); //accessing the element (div) 
     in the html file (DOM) below: the function is establishing when timer starts it will deaulft 5 seconds
-    and decrease by 1 sc as time goes on- if tge timer hits 0 then the timer will stop and the message to player is
+    and decrease by 1 sc as time goes on- if the timer hits 0 then the timer will stop and the message to player is
     you lost the game.
     innerhtml accesses the x element you are reffering to (html data?)
     the const interval is calling the timer to update by seconds:
