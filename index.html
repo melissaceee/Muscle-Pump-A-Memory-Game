@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concentration Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Brain Game</h1>
     <header>
-        <img src="brainpic.png" alt="brain game logo">
+        <img src="brainpic.png" alt="brain game logo" class="brain-logo">
     </header>
-    <div id="instructions">
-    <h2> Instructions:
-       <ol>
-        <li> Memorize the position of the cards, you have 5 seconds before the timer starts!</li>
-        <li> Click on cards to reveal the number and find matching pairs.</li>
-        <li>Match all pairs before the timer runs out to win.</li>
-        <li>Goodluck!</li>
-       </ol>
-    </h2>
-</div>
-    <h3> Let's test your memory skills! </h3>
+    <h2> Let's test your memory skills! </h2>
+    <h3> Instructions:
+        <ol> class="instructions"
+            <li> Memorize the position of the cards, you have 5 seconds before the timer starts!</li>
+            <li> Click on cards to reveal the number and find matching pairs.</li>
+            <li>Match all pairs before the timer runs out to win.</li>
+            <li>Goodluck!</li>
+        </ol>
+    </h3>
+
     <div id="timer">Time Left: <span id="time-left"></span> seconds</div>
     <div id="game-result"></div>
     <div id="game-board"></div>
-</div>
 
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

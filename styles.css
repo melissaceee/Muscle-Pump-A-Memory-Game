@@ -1,39 +1,56 @@
-/* styles.css */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-
-
 h1 {
-    color:black;
+    color: black;
     font-size: 45px;
     text-align: center;
     margin: 20px;
 }
-#instructions {
-    width: 80%; /
-    text-align: left;
-    margin-left: 50px;
+
+.brain-logo{
+    width: auto;
+    height: auto;
+}
+header {
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 h2 {
-    color:black;
-    font-size: 14px;
-    text-align: left;
-}
-
-h3 {
-    color:black;
+    color: black;
     font-size: 22px;
     text-align: center;
 }
 
+
+
+h3 {
+    color: black;
+    font-size: 15px;
+}
+
+.instructions {
+    border:1px;
+    padding: 15px;
+}
+#timer {
+    margin: 20px;
+    font-size: 24px;
+}
 
 #game-board {
     display: flex;
@@ -41,8 +58,8 @@ h3 {
     width: 500px; 
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
-
 
 .card {
     width: 100px;
@@ -54,6 +71,7 @@ h3 {
     font-size: 32px;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .card.matched {
@@ -61,4 +79,6 @@ h3 {
 }
 
 .card.clicked {
-    background-color: none;
+    background-color: pink;
+}
+
