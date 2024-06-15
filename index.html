@@ -4,33 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concentration Game</title>
+    <title>Muscle Pump: A Memory Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Brain Game</h1>
+    <h1>Muscle Pump</h1>
     <header>
         <img src="brainpic.png" alt="brain game logo" class="brain-logo">
     </header>
-    <h2> Let's test your memory skills! </h2>
+    <h2> Show off your skills and let's put your memory to the test!</h2>
 
-    <div class = "instruction-box">
-    <h3> Instructions </h3>
-        <ol class= "instructions"> 
+    <div class="instruction-box">
+        <h3> Instructions </h3>
+        <ol class="instructions">
             <li> Memorize the position of the cards, you have 5 seconds before the timer starts!</li>
             <li> Click on cards to reveal the number and find matching pairs.</li>
             <li>Match all pairs before the timer runs out to win.</li>
             <li>Goodluck!</li>
         </ol>
     </div>
-   
 
-    <div id="timer">Time Left: <span id="time-left"></span> seconds</div>
+
+    <div id="timer">countdown: <span id="time-left"></span> seconds</div>
     <div id="game-result"></div>
-    <div id="game-board"></div>
-
-
+    <div id="game-board">
+        <div class="card" data-index="0"></div>
+        <div class="card" data-index="1"></div>
+        <div class="card" data-index="2"></div>
+        <div class="card" data-index="3"></div>
+        <div class="card" data-index="4"></div>
+        <div class="card" data-index="5"></div>
+        <div class="card" data-index="6"></div>
+        <div class="card" data-index="7"></div>
+        <div class="card" data-index="8"></div>
+        <div class="card" data-index="9"></div>
+        <div class="card" data-index="10"></div>
+        <div class="card" data-index="11"></div>
+        <div class="card" data-index="12"></div>
+        <div class="card" data-index="13"></div>
+        <div class="card" data-index="14"></div>
+        <div class="card" data-index="15"></div>
+        <div class="card" data-index="16"></div>
+        <div class="card" data-index="17"></div>
+        <div class="card" data-index="18"></div>
+        <div class="card" data-index="19"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 
