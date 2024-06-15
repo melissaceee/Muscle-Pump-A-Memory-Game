@@ -92,3 +92,14 @@ h3 {
     background-color: none;
 }
 
+.game-result-lost {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+.game-result-win {
+    font-size: 50px;
+    color: green;
+    text-align: center;
+}

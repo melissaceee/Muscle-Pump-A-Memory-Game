@@ -61,4 +61,45 @@ function hideAllCards() {
     interval = setInterval(updateTimer, 1000);
 }
 
-// still can not test the game but can see the format (html and css)
+startGame();
+
+function showCard() {
+    const isClicked = this.classList.contains('clicked');
+    const isMatched = this.classList.contains('matched');
+    const canFlip = clickedCards.length < 2 && !isClicked && !isMatched;
+
+    if (canFlip) {
+        this.textContent = this.dataset.value;
+        this.classList.add('clicked');
+        clickedCards.push(this);
+
+        if (clickedCards.length === 2) {
+            setTimeout(checkMatch, 500);
+        }
+    }
+}
+
+function checkMatch() {
+    const [card1, card2] = clickedCards;
+    if (card1.dataset.value === card2.dataset.value) {
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        matchedCards.push(card1, card2);
+    } else {
+        setTimeout(() => {
+            card1.classList.remove('clicked');
+            card2.classList.remove('clicked');
+            card1.textContent = '';
+            card2.textContent = '';
+        }, 500);
+    }
+    clickedCards = [];
+
+    if (matchedCards.length === cards.length) {
+        clearInterval(interval);
+        const results = document.getElementById('game-result');
+        results.classList.add('game-result-win');
+        setTimeout(() => results.innerHTML = 'Winner winner chick dinner!!!', 500);
+    }
+}
+

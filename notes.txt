@@ -87,3 +87,44 @@ for each card element = display the card value => show data value
 // this setinterval is commonly used for timer - help guide provided in slack channel by josh smith
     interval = setInterval(updateTimer, 1000);
 }
+
+try to start the game -initialize
+startGame()
+
+create the if statements or conditions of the game for the matched cards = if all cards are matched within the
+45 second timer then the the player wins the game.
+
+the time has to be in milliseconds example 1000= 1 sec, 2000= 2 sec
+
+when the use cicks the two cards this fuction will call and see if the numbers match up -if the data attributes match up 
+there cards will be in the matched class and move to this matched array 
+if it values do not match (the set timeOUt) statement is letting machine know that 
+then the cards 'clicked' value will dissapear after 5 seconds - passing it back as empty value/string
+
+
+function checkMatch() {
+    const [card1, card2] = clickedCards;
+    if (card1.dataset.value === card2.dataset.value) {
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        matchedCards.push(card1, card2);
+    } else {
+        setTimeout(() => {
+            card1.classList.remove('clicked');
+            card2.classList.remove('clicked');
+            card1.textContent = '';
+            card2.textContent = '';
+        }, 500);
+    }
+    clickedCards = [];   
+
+    creating the logic for the winning message- if user matches all cards in the game within 45 seconds then the you win message
+    is displayed. 
+
+    if (matchedCards.length === cards.length) {
+        clearInterval(interval);
+        const results = document.getElementById('game-result');
+        results.classList.add('game-result-win');
+        setTimeout(() => results.innerHTML = 'Winner winner chick dinner!!!', 500);
+    }
+}
