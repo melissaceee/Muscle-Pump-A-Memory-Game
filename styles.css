@@ -43,10 +43,18 @@ h3 {
     font-size: 15px;
 }
 
-.instructions {
-    border:1px;
-    padding: 15px;
+.instruction-box {
+    border: 10px solid black; 
+    padding: 15px; 
+    margin: 20px auto;
+    width: 80%; 
+   
 }
+
+.instructions {
+    padding-left: 20px; /* Adjust padding for list */
+}
+
 #timer {
     margin: 20px;
     font-size: 24px;

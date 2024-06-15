@@ -41,5 +41,4 @@ function startGame() {
         gameBoard.appendChild(div);
         div.addEventListener('click', showCard);
     });
-
-   
+    
