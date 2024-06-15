@@ -87,6 +87,7 @@ function checkMatch() {
     if (card1.dataset.value === card2.dataset.value) {
         card1.classList.add('matched');
         card2.classList.add('matched');
+        matchedCards.push(card1, card2);
     } else {
             card1.classList.remove('clicked');
             card2.classList.remove('clicked');
@@ -94,7 +95,7 @@ function checkMatch() {
             card2.textContent = '';
         }
     clickedCards = [];
-    checkWin()
+    checkWin();
 
     }
   function checkWin() {
