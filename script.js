@@ -46,4 +46,19 @@ function startGame() {
 }
 
 function showAllCards() {
- 
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+        card.textContent = card.dataset.value;
+    });
+}
+
+function hideAllCards() {
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+        card.textContent = '';
+    });
+
+    interval = setInterval(updateTimer, 1000);
+}
+
+// still can not test the game but can see the format (html and css)

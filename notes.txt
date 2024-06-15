@@ -46,7 +46,7 @@
  
 
 // function to start game- within the shuffled cards array, access all (class) cards- 
-for each 'card' element set the value from shuffle array as data attribute
+for each 'card' element set the value from shuffle array as data attribute value
 the event listener enables user click to reveal the card value 
 
 
@@ -59,9 +59,31 @@ function startGame() {
     })
 
 
+//this function is calling the game to show all of the card values in the beggining- this is needed in order for user to 
+try to remember placement and start to play
+
+calling all the card elements within the class card
+for each card element = display the card value => show data value
     function showAllCards() {
     const allCards = document.querySelectorAll('.card');
     allCards.forEach(card => {
         card.textContent = card.dataset.value;
     });
+}
+
+
+//after you show the card for 5 seconds, same needs to unreveal the card
+ and the timer will start with 45 seconds counting down
+
+ //calling all the card elements within the class card
+for each card element = display the card value => show data value
+
+ function hideAllCards() {
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+        card.textContent = '';
+    });
+
+// this setinterval is commonly used for timer - help guide provided in slack channel by josh smith
+    interval = setInterval(updateTimer, 1000);
 }
