@@ -16,6 +16,11 @@ h1 {
     text-align: center;
     margin: 20px;
 }
+#instructions {
+    width: 80%; /
+    text-align: left;
+    margin-left: 50px;
+}
 
 h2 {
     color:black;
@@ -57,5 +62,3 @@ h3 {
 
 .card.clicked {
     background-color: none;
-}
-
