@@ -45,3 +45,23 @@
     }
  
 
+// function to start game- within the shuffled cards array, access all (class) cards- 
+for each 'card' element set the value from shuffle array as data attribute
+the event listener enables user click to reveal the card value 
+
+
+function startGame() {
+    shuffle(cards);
+    const cardValue = document.querySelectorAll('.card');
+    cardValue.forEach((div, index) => {
+        div.dataset.value = cards[index];
+        div.addEventListener('click', showCard);
+    })
+
+
+    function showAllCards() {
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+        card.textContent = card.dataset.value;
+    });
+}

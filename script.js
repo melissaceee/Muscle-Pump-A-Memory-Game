@@ -45,3 +45,5 @@ function startGame() {
     setTimeout(hideAllCards, 5000)
 }
 
+function showAllCards() {
+ 
